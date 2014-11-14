@@ -4,13 +4,18 @@
 
 //What width and height do buttons have to be in px to fit on an iPhone
 
-var deviceWidth = 640;
-var deviceHeight = 1136;
-var butttonsAcross = parseInt(prompt("How many buttons do you want across the screen on the iPhone?"));
-var buttonsTopBottom = parseInt(prompt("How many buttons do you want top to bottom?"));
+var iPhoneWidth = 640;
+var iPhoneHeight = 1136;
+var iPadWidth = 2048;
+var iPadHeight = 1536;
+var device = prompt("Are you using an iPad or and iPhone?")
+var butttonsAcross = prompt("How many buttons do you want across the screen");
+var buttonsTopBottom = prompt("How many buttons do you want top to bottom?");
 
-if(butttonsAcross && buttonsTopBottom != null){
-	console.log("Oops! You missed an input! Please enter a value.");
-}else{
-	console.log("Your buttons will have to be " + deviceWidth/butttonsAcross + "px wide and " + deviceHeight/buttonsTopBottom + "px high.");
-};
+if(device === iPhone){
+	console.log("Your buttons will have to be " + iPhoneWidth/butttonsAcross + "px wide and " + iPhoneHeight/buttonsTopBottom + "px high.");
+}else if (device === iPad) {
+	console.log("Your buttons will have to be " + iPadWidth/butttonsAcross + "px wide and " + iPadHeight/buttonsTopBottom + "px high.");
+}else {
+	console.log("Opps! Something went wrong. Please try again.");
+}
