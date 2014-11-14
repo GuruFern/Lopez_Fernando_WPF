@@ -1,1 +1,3 @@
-alert("This is in the js file");
+//Fernando P. López
+//November 13, 2014
+//Assignment: Conditionals_Personal
