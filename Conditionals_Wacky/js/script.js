@@ -8,4 +8,8 @@ var ifClouds = "Clouds form beautiful shapes in the sky. Do you see the purple e
 var ifNoClouds = "Clear, Blue and Beautiful skies. Freedom is real and I can see nothing but the horizon.";
 var clouds = prompt("Is there clouds in the sky? Yes or No?");
 
-(clouds === Yes ) ? console.log(ifClouds) : console.log(ifNoClouds);
+if (clouds === "") {
+	var clouds = prompt("Oops! You forgot to describe the sky to me. Are there clouds in the sky? Yes or No?")
+};
+
+(clouds === "Yes" ) ? console.log(ifClouds) : console.log(ifNoClouds);
