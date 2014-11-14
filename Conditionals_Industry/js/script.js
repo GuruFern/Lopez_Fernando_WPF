@@ -12,5 +12,5 @@ var buttonsTopBottom = prompt("How many buttons do you want top to bottom?");
 if(butttonsAcross && buttonsTopBottom != 0){
 	console.log("Oops! You missed an input! Please enter a value.");
 }else{
-	console.log
+	console.log("Your buttons will have to be " + deviceWidth/butttonsAcross + "px wide and " + deviceHeight/buttonsTopBottom + "px high.");
 };
