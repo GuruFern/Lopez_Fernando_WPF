@@ -17,11 +17,11 @@ if(device === "") { //Validate if device is empty
 }
 
 if(butttonsAcross === "") { //Validate if buttonAcross is empty
-	var device = prompt("Hey! You forgot to enter your device. iPhone or iPad?"); //Prompt again and assign to buttonAcross variable
+	var butttonsAcross = prompt("Hey! You forgot to enter how many buttons do you want accross on the screen."); //Prompt again and assign to buttonAcross variable
 }
 
 if(buttonsTopBottom === "") { //Validate if buttonsTopBottom is empty
-	var device = prompt("Hey! You forgot to enter your device. iPhone or iPad?"); //Prompt again and assign to buttonsTopBottom variable
+	var buttonsTopBottom = prompt("Hey! You forgot to enter how many buttons from top to bottom you want."); //Prompt again and assign to buttonsTopBottom variable
 }
 
 if(device === "iPhone"){ //If device variable is iPhone then return True
