@@ -7,3 +7,11 @@
 
 var daysInWeek = 7;
 var averageEatenPerWeek = 3; //Average amount of boxes of Hot Pockets eaten per week
+var amountLeft = prompt("How many boxes of Hot Pockets are there in the freezer?");//Prompt the user to see how many boxes of Hot Pockets are left
+var daysLeft =  prompt("How many days are left in the week?"); //Prompts the user to enter how many days in the week are left
+
+if(){
+
+}else{
+	
+}
