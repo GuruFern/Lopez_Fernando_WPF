@@ -12,6 +12,18 @@ var device = prompt("Are you using an iPad or an iPhone?") //Prompt user what de
 var butttonsAcross = prompt("How many buttons do you want across the screen"); //Prompt user for how many buttons acrosss
 var buttonsTopBottom = prompt("How many buttons do you want top to bottom?"); //Prompt user for hom many buttons top to bottom
 
+if(device === "") { //Validate if device is empty
+	var device = prompt("Hey! You forgot to enter your device. iPhone or iPad?"); //Prompt again and assign to device variable
+}
+
+if(butttonsAcross === "") { //Validate if buttonAcross is empty
+	var device = prompt("Hey! You forgot to enter your device. iPhone or iPad?"); //Prompt again and assign to buttonAcross variable
+}
+
+if(buttonsTopBottom === "") { //Validate if buttonsTopBottom is empty
+	var device = prompt("Hey! You forgot to enter your device. iPhone or iPad?"); //Prompt again and assign to buttonsTopBottom variable
+}
+
 if(device === "iPhone"){ //If device variable is iPhone then return True
 	console.log("Your buttons will have to be " + iPhoneWidth/butttonsAcross + "px wide and " + iPhoneHeight/buttonsTopBottom + "px high."); //Print calculation for iPHone
 }else if (device === "iPad") { //If device variable is iPad then return True
