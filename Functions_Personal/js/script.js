@@ -6,3 +6,8 @@
 //Ask user for weight
 //Ask user for amount of daily excercise
 //Call function that has calculation
+
+function waterCalculation (w, e) {
+	w * .67;
+	w + (e * .4);
+};
