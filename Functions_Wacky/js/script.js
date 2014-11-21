@@ -17,3 +17,6 @@ var brickWallCalculator = function(wallWidth, wallHeight, brickWidth, brickHeigh
 	var numberBricks = (wallWidth * wallHeight) / (brickWidth * brickHeight);
 	return numberBricks;
 };
+
+var totalNumberBricks = brickWallCalculator(wallWidth, wallHeight, brickWidth, brickHeight);
+console.log("You will need " + totalNumberBricks + " of bricks to build your wall.");
