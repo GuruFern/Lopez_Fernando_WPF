@@ -9,7 +9,7 @@
 
 var wallWidth = prompt("How wide do you want to make your wall in feet?");
 var wallHeight = prompt("How tall do you want to make your wall in feet?");
-var brickAmount = prompt("What width in feet does the brick you are building with have?");
+var brickWidth = prompt("What width in feet does the brick you are building with have?");
 var brickHeight = prompt("What height in feet does the brick you are building with have?");
 var brickAmount = prompt("How many bricks do you have?")
 
@@ -20,8 +20,8 @@ var brickWallCalculator = function(wallWidth, wallHeight, brickWidth, brickHeigh
 
 var numberOfBricks = brickWallCalculator(wallWidth, wallHeight, brickWidth, brickHeight);
 
-if (numberOfBricks >= brickAmount) {
+if (brickAmount >= numberOfBricks) {
 	console.log("You are ready to go! Start building that wall.");
 }else{
-	console.log("You do not have enough bricks! Go get some more.");
+	console.log("You do not have enough bricks! You need " + (numberOfBricks - brickAmount) + " more bricks.");
 };
