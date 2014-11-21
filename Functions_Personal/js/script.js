@@ -10,6 +10,14 @@
 var weight = prompt("What is your current weight in pounds?");
 var excercise = prompt("How much excercise do you do a day in minutes?");
 
+if(weight === "") { //Validate if device is empty
+	var weight = prompt("Awww, don't be shy. What is your current weight in pounds?"); //Prompt again and assign to amountLeft variable
+}
+
+if(excercise === "") { //Validate if buttonAcross is empty
+	var excercise = prompt("Don't be bashful. How often do you flex them muscles?"); //Prompt again and assign to daysLeft variable
+}
+
 function waterCalculation (weight, excercise) {
 	var waterTotal = (weight * .67) + (excercise * .4);
 	return waterTotal;
