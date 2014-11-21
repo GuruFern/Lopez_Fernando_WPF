@@ -7,7 +7,6 @@
 //Ask user for amount of daily excercise
 //Call function that has calculation
 
-prompt("We will now calculate how much water you need per day in ounces.")
 var weight = prompt("What is your current weight in pounds?");
 var excercise = prompt("How much excercise do you do a day in minutes?");
 
