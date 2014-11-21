@@ -9,6 +9,7 @@
 
 var weight = prompt("What is your current weight in pounds?");
 var excercise = prompt("How much excercise do you do a day in minutes?");
+var waterAmount = prompt("How much water do you dring in ounces per day?")
 
 if(weight === "") { //Validate if device is empty
 	var weight = prompt("Awww, don't be shy. What is your current weight in pounds?"); //Prompt again and assign to amountLeft variable
@@ -18,10 +19,17 @@ if(excercise === "") { //Validate if buttonAcross is empty
 	var excercise = prompt("Don't be bashful. How often do you flex them muscles?"); //Prompt again and assign to daysLeft variable
 }
 
+if(waterAmount === "") { //Validate if buttonAcross is empty
+	var waterAmount = prompt("Drinking water is important. How much water do you dring a day?"); //Prompt again and assign to daysLeft variable
+}
+
 function waterCalculation (weight, excercise) {
 	var waterTotal = (weight * .67) + (excercise * .4);
 	return waterTotal;
 };
 
 var total = waterCalculation(weight, excercise);
-console.log("You should drink a total of " + total + "oz of water per day.");
+
+result = (waterAmount >= total) ? "You need to drink " + total + "oz of water per day and you are doing that and maybe even more!" : "You need to drink more water!";
+
+console.log(result);
