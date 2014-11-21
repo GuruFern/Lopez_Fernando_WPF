@@ -7,3 +7,8 @@
 //Ask for Wall Height 
 //Ask for Brick Size
 //Call Function that will perform calculation
+
+var wallWidth = prompt("How wide do you want to make your wall?");
+var wallHeight = prompt("How tall do you want to make your wall");
+var brickWidth = prompt("What width does the brick you are building with have?");
+var brickHeight = prompt("What height does the brick you are building with have?");
