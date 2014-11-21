@@ -11,3 +11,7 @@ function waterCalculation (w, e) {
 	w * .67;
 	w + (e * .4);
 };
+
+var weight = prompt("What is your current weight?");
+var excercise = prompt("How much excercise do you do a day in minutes?");
+
